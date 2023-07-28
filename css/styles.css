@@ -1,19 +1,21 @@
 :root {
-  --highlighted: #2196f3;
-  --second-text: #757575;
-  --main-text: #212121;
-  --main-bg: #2f303a;
-  --third-bg: #f5f4fa;
+  --highlighted-color: #2196f3;
+  --second-text-color: #757575;
+  --main-text-color: #212121;
+  --main-bg-color: #2f303a;
+  --third-bg-color: #f5f4fa;
+  --main-text-ff: 'Roboto';
+  --second-text-ff: 'Raleway';
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--main-text);
+  font-family: var(--main-text-ff), sans-serif;
+  color: var(--main-text-color);
 }
 
 a {
   text-decoration: none;
-  color: var(--main-text);
+  color: var(--main-text-color);
 }
 
 li {
@@ -21,26 +23,26 @@ li {
 }
 
 .logo {
-  color: var(--highlighted);
-  font-family: 'Raleway';
+  color: var(--highlighted-color);
+  font-family: var(--second-text-ff);
   font-size: 26px;
   font-weight: 700;
   text-decoration: none;
 }
 
 .link {
-  color: var(--main-text);
+  color: var(--main-text-color);
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
 }
 
 .link.contact {
-  color: var(--second-text);
+  color: var(--second-text-color);
 }
 
 .link.active {
-  color: var(--highlighted);
+  color: var(--highlighted-color);
 }
 
 .btn {
@@ -65,13 +67,13 @@ li {
 }
 
 .btn.active {
-  background-color: var(--highlighted);
+  background-color: var(--highlighted-color);
   color: #fff;
 }
 
 .link:hover,
 .link:focus {
-  color: var(--highlighted);
+  color: var(--highlighted-color);
 }
 
 .hero-title {
@@ -100,7 +102,7 @@ h2 {
 }
 
 .member-job {
-  color: var(--second-text);
+  color: var(--second-text-color);
   font-size: 16px;
 }
 
@@ -123,11 +125,11 @@ h2 {
 
 .hero,
 .footer {
-  background-color: var(--main-bg);
+  background-color: var(--main-bg-color);
 }
 
 .team {
-  background-color: var(--third-bg);
+  background-color: var(--third-bg-color);
 }
 
 .portfolio-card {
